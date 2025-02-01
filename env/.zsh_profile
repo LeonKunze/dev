@@ -58,7 +58,7 @@ addToPathFront $HOME/.local/apps/
 addToPathFront $HOME/.local/zig-linux-x86_64-0.13.0
 
 # do i need this one?
-addToPathFront $HOME/.local/go/bin
+addToPathFront /usr/local/go/bin
 addToPathFront /usr/local/go/bin
 addToPathFront $HOME/personal/sumneko/bin
 addToPathFront $HOME/.deno/bin

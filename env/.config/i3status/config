@@ -12,7 +12,7 @@ general {
 }
 
 order += "disk /"
-order += "battery all"
+order += "cpu_temperature 0"
 order += "load"
 order += "tztime local"
 
@@ -26,6 +26,11 @@ tztime local {
 
 load {
         format = "%1min"
+}
+
+cpu_temperature 0 {
+        format = "T: %degrees °C"
+        path = "/sys/class/hwmon/hwmon0/temp1_input"
 }
 
 disk "/" {
